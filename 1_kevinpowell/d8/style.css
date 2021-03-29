@@ -1,0 +1,66 @@
+/* https://www.figma.com/file/dGPcL6Ym2avOt4736aHb2B/conquer-responsive-layout-week-1-final-challenge?node-id=1%3A2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+button {
+    background-color: #38CFD9;
+    padding: 1em 2em;
+    border-radius: 2em;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Roboto Bold';
+    font-weight: 900;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto Bold';
+    font-size: 24px;
+
+}
+.head {
+    background-color: #23424A;
+    padding: 6rem;
+    min-height: 65vh;
+}
+.inner {
+    width: 60%;
+}
+h5 {
+    font-family: 'Roboto Regular';
+    font-weight:100;
+    font-size: 17px;
+}
+.colcontainer {
+    padding: 1rem 6rem;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.colheader {
+    color: #87629A;
+}
+.col {
+
+}
+.footer {
+    background-color: #136C72;
+    color: white;
+}
+.footer * {
+    color: white;
+}
+.col + .col {
+    margin-left: 1rem;
+}

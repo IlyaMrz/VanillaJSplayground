@@ -113,3 +113,18 @@ h1 {
     color: white;
     padding: 0.2rem;
 }
+@media screen and (max-width: 900px) {
+    .main{
+        width: 100%;
+    }
+    .container {
+        text-align: center;
+        align-items: center;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .side {
+        width: 100%;
+    }
+}

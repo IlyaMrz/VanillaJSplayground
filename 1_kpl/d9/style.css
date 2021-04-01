@@ -11,6 +11,34 @@
    below
 
 */
+header {
+    background-color: #136c72;
+    padding: .5em;
+    padding-right: 10%;
+}
+/* .nav_link a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    
+} */
+.nav__list a {
+    text-decoration: none;
+    color:white;
+}
+
+.nav__link:hover {
+    opacity: .75;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -98,6 +126,13 @@ h1 {
     background-color: #136C72;
 }
 
+.nav__link--button {
+    background: #fff;
+    color: #136c72!important;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
+
 .main {
     width: 70%;
     margin-right: 2vw;
@@ -127,4 +162,8 @@ h1 {
     .side {
         width: 100%;
     }
+    .row {
+        flex-direction: column-reverse;
+    }
 }
+

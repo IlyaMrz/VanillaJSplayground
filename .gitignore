@@ -1,1 +1,2 @@
-./joke from API to speechSynthesis/bender.gif
+*.gif
+/joke from API to speechSynthesis/*.gif

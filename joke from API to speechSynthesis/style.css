@@ -11,6 +11,7 @@
 .newJoke{
     align-self: flex-end;
     position: absolute;
+	margin-right: 10%;
 }
 
 body {

@@ -1,7 +1,12 @@
 const joke = document.querySelector('.joke')
 const newJoke = document.querySelector('.newJoke')
 const synth = window.speechSynthesis;
+const enableVoice = document.querySelector("#tts")
+const ttsRateRange = document.querySelector('#rate')
+
 let v = []
+let ttsEnable = true;
+let ttsRate = 5;
 
 function populateVoiceList(){
     v = synth.getVoices()
@@ -14,7 +19,7 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 function speak(nextJoke) {
     let utterThis = new SpeechSynthesisUtterance(nextJoke);
     utterThis.voice = v[3];
-    utterThis.rate = 5;
+    utterThis.rate = ttsRate;
     synth.speak(utterThis)
 }
 
@@ -29,7 +34,16 @@ async function getJoke() {
         nextJoke = data.joke;
       }
     joke.innerHTML = nextJoke
-    speak(nextJoke)
+    if (ttsEnable){
+      speak(nextJoke)
+    }
+}
+
+function toggleTTS(e) {
+  ttsEnable = e.target.checked;
+}
+function changeRate(e) {
+  ttsRate = e.target.value;
 }
 
 // getJoke()
@@ -41,3 +55,6 @@ window.document.body.onkeyup = function(e){
         getJoke()
     }
 }
+
+enableVoice.addEventListener('click', toggleTTS)
+ttsRateRange.addEventListener('change',changeRate)

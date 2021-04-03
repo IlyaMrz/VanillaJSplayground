@@ -12,7 +12,18 @@
         <!-- <h2>A joke from jokeAPIv2:</h2> -->
         <div class="joke">Yo momma is so big that... I had to format my NTFS drive to a different file system to support her pictures.</div>
     </div>
-    <button type="button" class="newJoke btn btn-dark">new joke</button>
+    <div class="left">
+        <div class="options">
+            <div class="option">
+                <label>Joke to voice</label>
+                <input type="checkbox" id="tts" checked>
+            </div>
+            <br>
+            <input min="1" max="10" step="1" type="range" id="rate" value="5">
+            <label>Speech Rate</label>
+        </div>
+        <button type="button" class="newJoke btn btn-dark">new joke</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

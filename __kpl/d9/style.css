@@ -152,7 +152,15 @@ h1 {
     .main{
         width: 100%;
     }
+    .hero {
+        padding: 20px;
+    }
+    .hero__text {
+        width: 100%;
+        /* padding: 0; */
+    }
     .container {
+        /* width: 90%; */
         text-align: center;
         align-items: center;
     }

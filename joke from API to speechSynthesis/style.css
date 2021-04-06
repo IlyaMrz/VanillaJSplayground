@@ -45,11 +45,11 @@ body {
     flex-direction: column;
 }
 .left {
-    height: 50%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     color: #6b6c6d;
-    margin-bottom: 30%;
+    margin-bottom: 30vh;
     justify-content: space-between;
 }
 label {
